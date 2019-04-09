@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-export class Todo{
+export class Todo {
   desc: string;
 }
 
@@ -13,6 +13,7 @@ export class TodoComponent implements OnInit {
 
   todo: Todo = new Todo();
   todos: Todo[] = [];
+
   constructor() { }
 
   ngOnInit() {
@@ -24,8 +25,6 @@ export class TodoComponent implements OnInit {
   }
 
   delete(todo: Todo) {
-    this.todos.splice
-    (this.todos.indexOf(todo),1);
+    this.todos.splice(this.todos.indexOf(todo), 1);
   }
-
 }
